@@ -1,0 +1,13 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2019 OpenWrt.org
+
+START=99
+STOP=1
+
+start() {
+	sapserver -d
+}
+
+stop(){
+	killall sapserver
+}
