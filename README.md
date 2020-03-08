@@ -1,5 +1,5 @@
 # miniSAPserver-for-OpenWrt
-Les sources officielles de miniSAPserver ne peuvent pas être conpilées pour OpenWrt, à cause d'une variable dont le type ne semble pas être supporté sur ce système.
+Les sources officielles de miniSAPserver ne peuvent pas être compilées pour OpenWrt, à cause d'une variable dont le type ne semble pas être supporté sur ce système.
 
 J'ai donc modifié les sources pour qu'elles puissent être compilées pour OpenWrt : elles sont disponibles dans le dossier "sources" de ce repo, et peuvent être compilées.
 
