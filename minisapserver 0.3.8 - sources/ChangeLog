@@ -1,0 +1,1011 @@
+------------------------------------------------------------------------
+r327 | courmisch | 2007-03-11 14:20:43 +0200 (Sun, 11 Mar 2007) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk
+
+svn:ignore
+
+------------------------------------------------------------------------
+r326 | courmisch | 2007-03-11 14:19:21 +0200 (Sun, 11 Mar 2007) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/Makefile.am
+   M /miniSAPserver/trunk/NEWS
+   M /miniSAPserver/trunk/configure.ac
+   A /miniSAPserver/trunk/m4/sockaddr.m4
+
+Check for sa_len
+
+------------------------------------------------------------------------
+r325 | courmisch | 2007-03-11 14:12:31 +0200 (Sun, 11 Mar 2007) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/message.cpp
+   M /miniSAPserver/trunk/message.h
+   M /miniSAPserver/trunk/sapserver.cpp
+   M /miniSAPserver/trunk/sapserver.h
+
+Fix another compiler warning
+
+------------------------------------------------------------------------
+r324 | courmisch | 2007-03-11 14:10:50 +0200 (Sun, 11 Mar 2007) | 3 lines
+Changed paths:
+   M /miniSAPserver/trunk/sapserver.cpp
+
+Fix badly flawed announce delay computation.
+Bug reported by Pierre Beyssac.
+
+------------------------------------------------------------------------
+r323 | courmisch | 2007-03-11 14:03:04 +0200 (Sun, 11 Mar 2007) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/broadcast.cpp
+
+Fix warnings and set sockaddr.sa_len
+
+------------------------------------------------------------------------
+r322 | courmisch | 2007-03-11 13:59:53 +0200 (Sun, 11 Mar 2007) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/configure.ac
+
+Don't override CXXFLAGS. It's annoying
+
+------------------------------------------------------------------------
+r321 | courmisch | 2007-03-11 13:58:35 +0200 (Sun, 11 Mar 2007) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/AUTHORS
+   M /miniSAPserver/trunk/configure.ac
+
+Start minisapserver 0.3.4 dev
+
+------------------------------------------------------------------------
+r320 | courmisch | 2007-02-20 20:00:02 +0200 (Tue, 20 Feb 2007) | 3 lines
+Changed paths:
+   M /miniSAPserver/trunk/configure.ac
+
+Drop gzip tarball. You should use bzip2 nowadays.
+(Don't blame Debian retardness on me)
+
+------------------------------------------------------------------------
+r319 | courmisch | 2007-02-20 19:58:11 +0200 (Tue, 20 Feb 2007) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/NEWS
+   M /miniSAPserver/trunk/message.cpp
+   M /miniSAPserver/trunk/program.cpp
+
+Quite a bunch of SDP conformance fixes.
+
+------------------------------------------------------------------------
+r318 | courmisch | 2007-02-20 19:51:13 +0200 (Tue, 20 Feb 2007) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/sapserver.cpp
+
+Fix typo in usage string
+
+------------------------------------------------------------------------
+r317 | courmisch | 2007-02-20 19:50:03 +0200 (Tue, 20 Feb 2007) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/sap.cfg
+
+Update examples
+
+------------------------------------------------------------------------
+r316 | courmisch | 2007-02-20 19:35:05 +0200 (Tue, 20 Feb 2007) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/message.cpp
+
+Do not send TTL for IPv6 connection infos. This was invalid.
+
+------------------------------------------------------------------------
+r315 | courmisch | 2007-02-20 19:34:39 +0200 (Tue, 20 Feb 2007) | 3 lines
+Changed paths:
+   M /miniSAPserver/trunk/sapserver.h
+
+Use 255 as default TTL (which is a deprecated parameter anyway).
+15 was bogus legacy.
+
+------------------------------------------------------------------------
+r314 | courmisch | 2006-01-31 20:09:32 +0200 (Tue, 31 Jan 2006) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/broadcast.cpp
+   M /miniSAPserver/trunk/message.cpp
+   M /miniSAPserver/trunk/message.h
+
+Remove dead code and inline trivial getters
+
+------------------------------------------------------------------------
+r313 | courmisch | 2006-01-31 19:55:35 +0200 (Tue, 31 Jan 2006) | 4 lines
+Changed paths:
+   M /miniSAPserver/trunk/broadcast.cpp
+   M /miniSAPserver/trunk/message.cpp
+   M /miniSAPserver/trunk/message.h
+   M /miniSAPserver/trunk/sapserver.cpp
+
+- Avoid identical malloc/memcpy/free for every packet sent,
+- don't reinvent memcpy()
+- and other clean ups
+
+------------------------------------------------------------------------
+r312 | courmisch | 2006-01-31 17:59:32 +0200 (Tue, 31 Jan 2006) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/broadcast.cpp
+
+Support for IPv6 multicast output interface setting
+
+------------------------------------------------------------------------
+r311 | courmisch | 2006-01-31 17:26:22 +0200 (Tue, 31 Jan 2006) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/message.cpp
+   M /miniSAPserver/trunk/message.h
+
+Remove dead code
+
+------------------------------------------------------------------------
+r310 | courmisch | 2006-01-31 17:23:05 +0200 (Tue, 31 Jan 2006) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/configure.ac
+
+This is minisap version 0.3.3-trunk
+
+------------------------------------------------------------------------
+r309 | courmisch | 2006-01-31 17:18:18 +0200 (Tue, 31 Jan 2006) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/sapserver.h
+
+Make default TTL value identical in documentation and code
+
+------------------------------------------------------------------------
+r307 | courmisch | 2005-10-14 15:43:14 +0300 (Fri, 14 Oct 2005) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/ChangeLog
+
+Update ChangeLog for 0.3.2
+
+------------------------------------------------------------------------
+r305 | courmisch | 2005-10-14 15:38:46 +0300 (Fri, 14 Oct 2005) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/NEWS
+
+Add NEWS for 0.3.2
+
+------------------------------------------------------------------------
+r304 | courmisch | 2005-10-14 15:37:53 +0300 (Fri, 14 Oct 2005) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/configure.ac
+
+Bump release number to 0.3.2
+
+------------------------------------------------------------------------
+r303 | courmisch | 2005-10-14 15:36:22 +0300 (Fri, 14 Oct 2005) | 3 lines
+Changed paths:
+   M /miniSAPserver/trunk/broadcast.cpp
+
+Fix multicast TTL setting
+(credited to LennonNZ on VideoLAN forums)
+
+------------------------------------------------------------------------
+r302 | courmisch | 2005-07-20 21:24:02 +0300 (Wed, 20 Jul 2005) | 4 lines
+Changed paths:
+   M /miniSAPserver/trunk/Makefile.am
+   M /miniSAPserver/trunk/NEWS
+   A /miniSAPserver/trunk/admin
+   A /miniSAPserver/trunk/admin/config.rpath (from /miniSAPserver/trunk/config.rpath:297)
+   M /miniSAPserver/trunk/bootstrap
+   D /miniSAPserver/trunk/config.rpath
+   M /miniSAPserver/trunk/configure.ac
+
+- Clean up build system
+- Bump version number
+- Fix --enable-slp
+
+------------------------------------------------------------------------
+r301 | courmisch | 2005-07-20 21:23:21 +0300 (Wed, 20 Jul 2005) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/sap.cfg
+
+Update sample config
+
+------------------------------------------------------------------------
+r300 | courmisch | 2005-07-20 21:21:23 +0300 (Wed, 20 Jul 2005) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/program.cpp
+
+Forgot this file
+
+------------------------------------------------------------------------
+r299 | courmisch | 2005-07-20 21:21:13 +0300 (Wed, 20 Jul 2005) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/message.cpp
+   M /miniSAPserver/trunk/parser.cpp
+   M /miniSAPserver/trunk/program.h
+
+Remove IP version thing
+
+------------------------------------------------------------------------
+r298 | courmisch | 2005-07-20 21:20:54 +0300 (Wed, 20 Jul 2005) | 3 lines
+Changed paths:
+   M /miniSAPserver/trunk/slp.cpp
+
+- Repair SLP compilation
+- Do things simply and efficiently
+
+------------------------------------------------------------------------
+r296 | courmisch | 2005-07-09 17:18:18 +0300 (Sat, 09 Jul 2005) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/ChangeLog
+
+Re-updated ChangeLog, prepare release 0.3.0
+
+------------------------------------------------------------------------
+r294 | courmisch | 2005-07-05 18:22:08 +0300 (Tue, 05 Jul 2005) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/message.cpp
+
+Remove dead code
+
+------------------------------------------------------------------------
+r293 | courmisch | 2005-06-24 11:45:55 +0300 (Fri, 24 Jun 2005) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/sap.cfg
+
+Add RTP announce sample
+
+------------------------------------------------------------------------
+r292 | courmisch | 2005-06-24 11:37:28 +0300 (Fri, 24 Jun 2005) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/Makefile.am
+
+Fix typo that prevented linking on *BSD
+
+------------------------------------------------------------------------
+r291 | courmisch | 2005-06-24 10:03:44 +0300 (Fri, 24 Jun 2005) | 3 lines
+Changed paths:
+   M /miniSAPserver/trunk/Makefile.am
+   M /miniSAPserver/trunk/configure.ac
+   A /miniSAPserver/trunk/m4
+   A /miniSAPserver/trunk/m4/getopt.m4
+   M /miniSAPserver/trunk/sapserver.cpp
+
+- Some warnings fixed
+- Portability fixes
+
+------------------------------------------------------------------------
+r290 | courmisch | 2005-06-23 21:24:47 +0300 (Thu, 23 Jun 2005) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/parser.cpp
+
+Compile fix for const-based iconv()
+
+------------------------------------------------------------------------
+r289 | courmisch | 2005-06-23 21:11:02 +0300 (Thu, 23 Jun 2005) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/sapserver.cpp
+
+gcc2 compile fix
+
+------------------------------------------------------------------------
+r288 | courmisch | 2005-06-23 20:04:58 +0300 (Thu, 23 Jun 2005) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/ChangeLog
+
+Brought ChangeLog back in english
+
+------------------------------------------------------------------------
+r287 | courmisch | 2005-06-23 20:02:53 +0300 (Thu, 23 Jun 2005) | 2 lines
+Changed paths:
+   M /miniSAPserver/trunk/NEWS
+
+Updated NEWS
+
+------------------------------------------------------------------------
+r286 | courmisch | 2005-06-23 20:01:08 +0300 (Thu, 23 Jun 2005) | 4 lines
+Changed paths:
+   A /miniSAPserver/trunk/ChangeLog
+   M /miniSAPserver/trunk/NEWS
+   M /miniSAPserver/trunk/configure.ac
+   M /miniSAPserver/trunk/sapserver.cpp
+
+ChangeLog: Added real ChangeLog
+configure.ac: fixed AM_INIT_AUTOMAKE
+sapserver.cpp: long options and --version support
+
+------------------------------------------------------------------------
+r285 | courmisch | 2005-06-23 19:30:55 +0300 (Thu, 23 Jun 2005) | 2 lines
+Changed paths:
+   D /miniSAPserver/trunk/ChangeLog
+   A /miniSAPserver/trunk/NEWS (from /miniSAPserver/trunk/ChangeLog:283)
+
+ChangeLog -> NEWS
+
+------------------------------------------------------------------------
+r284 | courmisch | 2005-06-23 19:30:30 +0300 (Thu, 23 Jun 2005) | 2 lines
+Changed paths:
+   D /miniSAPserver/trunk/NEWS
+
+Remove empty file
+
+------------------------------------------------------------------------
+r283 | courmisch | 2005-06-23 19:22:12 +0300 (Thu, 23 Jun 2005) | 4 lines
+Changed paths:
+   M /miniSAPserver/trunk/message.cpp
+   M /miniSAPserver/trunk/parser.cpp
+   M /miniSAPserver/trunk/program.cpp
+   M /miniSAPserver/trunk/program.h
+
+RTP announce support
+originally based on Marian Durkovic <md@bts.sk>
+yet completely rewritten because his patches wouldn't apply to trunk
+
+------------------------------------------------------------------------
+r281 | courmisch | 2005-06-23 18:55:10 +0300 (Thu, 23 Jun 2005) | 2 lines
+Changed paths:
+   A /VLANbridge/trunk (from /trunk/VLANbridge:280)
+   A /VLANserver/trunk (from /trunk/VLANserver:280)
+   A /doc/trunk (from /trunk/doc:280)
+   A /miniSAPserver/trunk (from /trunk/miniSAPserver:280)
+   A /miniVLANserver/trunk (from /trunk/miniVLANserver:280)
+   A /miniVLCS/trunk (from /trunk/miniVLCS:280)
+   D /trunk/VLANbridge
+   D /trunk/VLANserver
+   D /trunk/doc
+   D /trunk/miniSAPserver
+   D /trunk/miniVLANserver
+   D /trunk/miniVLCS
+   D /trunk/vlb-linux
+   A /vlb-linux/trunk (from /trunk/vlb-linux:280)
+
+Repository rationalisation (part 2)
+
+------------------------------------------------------------------------
+r278 | courmisch | 2005-06-08 17:46:56 +0300 (Wed, 08 Jun 2005) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/ChangeLog
+   M /trunk/miniSAPserver/parser.cpp
+   M /trunk/miniSAPserver/parser.h
+   M /trunk/miniSAPserver/sap.cfg
+
+remove no longer used ipv6_scope and ipversion options
+
+------------------------------------------------------------------------
+r277 | courmisch | 2005-06-08 14:56:17 +0300 (Wed, 08 Jun 2005) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/broadcast.cpp
+   M /trunk/miniSAPserver/broadcast.h
+   M /trunk/miniSAPserver/sapserver.cpp
+
+Auto-select address to send SAP announce to
+
+------------------------------------------------------------------------
+r276 | courmisch | 2005-06-08 14:52:45 +0300 (Wed, 08 Jun 2005) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/sap.cfg
+
+Remove HTTP sample
+
+------------------------------------------------------------------------
+r275 | courmisch | 2005-06-08 14:51:30 +0300 (Wed, 08 Jun 2005) | 3 lines
+Changed paths:
+   M /trunk/miniSAPserver/message.cpp
+   M /trunk/miniSAPserver/parser.cpp
+   M /trunk/miniSAPserver/program.cpp
+   M /trunk/miniSAPserver/program.h
+
+Remove non-standard HTTP announce
+(VLC no longer supports them anyway)
+
+------------------------------------------------------------------------
+r274 | courmisch | 2005-06-08 13:26:05 +0300 (Wed, 08 Jun 2005) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/sapserver.cpp
+
+ensafe daemon mode
+
+------------------------------------------------------------------------
+r273 | courmisch | 2005-06-07 13:28:48 +0300 (Tue, 07 Jun 2005) | 4 lines
+Changed paths:
+   M /trunk/miniSAPserver/broadcast.cpp
+   M /trunk/miniSAPserver/broadcast.h
+   M /trunk/miniSAPserver/sapserver.cpp
+
+- return 1 in case of error (-1 is not valid from main)
+- shutdown socket for receival
+- clean up
+
+------------------------------------------------------------------------
+r272 | courmisch | 2005-05-23 22:14:04 +0300 (Mon, 23 May 2005) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/Makefile.am
+   M /trunk/miniSAPserver/parser.cpp
+   M /trunk/miniSAPserver/parser.h
+   M /trunk/miniSAPserver/sapserver.cpp
+   M /trunk/miniSAPserver/sapserver.h
+
+Some more clean up
+
+------------------------------------------------------------------------
+r271 | courmisch | 2005-05-23 14:50:21 +0300 (Mon, 23 May 2005) | 3 lines
+Changed paths:
+   M /trunk/miniSAPserver
+   M /trunk/miniSAPserver/AUTHORS
+   M /trunk/miniSAPserver/Makefile.am
+   M /trunk/miniSAPserver/bootstrap
+   M /trunk/miniSAPserver/broadcast.cpp
+   M /trunk/miniSAPserver/broadcast.h
+   M /trunk/miniSAPserver/configure.ac
+   M /trunk/miniSAPserver/lslp.h
+   M /trunk/miniSAPserver/message.cpp
+   M /trunk/miniSAPserver/message.h
+   M /trunk/miniSAPserver/parser.cpp
+   M /trunk/miniSAPserver/parser.h
+   M /trunk/miniSAPserver/program.cpp
+   M /trunk/miniSAPserver/program.h
+   M /trunk/miniSAPserver/sap.cfg
+   M /trunk/miniSAPserver/sapserver.cpp
+   M /trunk/miniSAPserver/sapserver.h
+   M /trunk/miniSAPserver/slp.cpp
+
+- Clean up
+- Basic signal handling
+
+------------------------------------------------------------------------
+r270 | courmisch | 2005-05-23 14:42:39 +0300 (Mon, 23 May 2005) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/parser.cpp
+
+Don't leak a file descriptor
+
+------------------------------------------------------------------------
+r269 | courmisch | 2005-03-05 22:43:08 +0200 (Sat, 05 Mar 2005) | 4 lines
+Changed paths:
+   M /trunk/miniSAPserver/ChangeLog
+   M /trunk/miniSAPserver/Makefile.am
+   A /trunk/miniSAPserver/config.rpath
+   M /trunk/miniSAPserver/configure.ac
+   M /trunk/miniSAPserver/parser.cpp
+   M /trunk/miniSAPserver/sapserver.cpp
+
+On-the-fly characters encoding conversion to UTF-8
+for announce name and playlist group.
+VLC has been doing that for sometime.
+
+------------------------------------------------------------------------
+r268 | courmisch | 2005-01-11 21:20:46 +0200 (Tue, 11 Jan 2005) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/configure.ac
+
+Update version number to 0.2.5-svn
+
+------------------------------------------------------------------------
+r267 | courmisch | 2005-01-03 14:45:03 +0200 (Mon, 03 Jan 2005) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/message.cpp
+
+Fixes catastrophic memleak noticed by dionoea and jix
+
+------------------------------------------------------------------------
+r266 | courmisch | 2005-01-03 14:33:55 +0200 (Mon, 03 Jan 2005) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/parser.cpp
+
+Fixes yet another use of uninitialized flag
+
+------------------------------------------------------------------------
+r265 | courmisch | 2005-01-03 14:25:14 +0200 (Mon, 03 Jan 2005) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/message.cpp
+   M /trunk/miniSAPserver/program.cpp
+
+Fixes several use of unitialized flags
+
+------------------------------------------------------------------------
+r264 | courmisch | 2005-01-03 14:17:11 +0200 (Mon, 03 Jan 2005) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/message.cpp
+
+Fixes off by one bug
+
+------------------------------------------------------------------------
+r263 | courmisch | 2005-01-03 14:12:45 +0200 (Mon, 03 Jan 2005) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/parser.cpp
+   M /trunk/miniSAPserver/sapserver.cpp
+
+Fixes use of unitialized daemon flag
+
+------------------------------------------------------------------------
+r262 | courmisch | 2005-01-03 14:05:21 +0200 (Mon, 03 Jan 2005) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/parser.cpp
+   M /trunk/miniSAPserver/parser.h
+
+Cleanup
+
+------------------------------------------------------------------------
+r261 | courmisch | 2005-01-03 14:02:27 +0200 (Mon, 03 Jan 2005) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/parser.cpp
+   M /trunk/miniSAPserver/parser.h
+
+Fixes incorrect (lower) bound checking in Config::strgetb
+
+------------------------------------------------------------------------
+r260 | zorglub | 2004-11-10 12:25:13 +0200 (Wed, 10 Nov 2004) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/message.cpp
+   M /trunk/miniSAPserver/sapserver.cpp
+
+Use timestamps for session id and version
+
+------------------------------------------------------------------------
+r259 | adn | 2004-08-16 14:00:55 +0300 (Mon, 16 Aug 2004) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/Makefile.am
+
+removed useless doc_DATA=..
+
+------------------------------------------------------------------------
+r258 | sam | 2004-08-11 17:07:43 +0300 (Wed, 11 Aug 2004) | 5 lines
+Changed paths:
+   M /trunk/miniSAPserver/Makefile.am
+
+  * Makefile.am:
+    + Removed illegal undefined variable.
+    + Put sap.cfg in ${sysconfdir}, configure with --sysconfdir=/etc to force
+      this into /etc.
+
+------------------------------------------------------------------------
+r257 | hartman | 2004-07-29 18:47:27 +0300 (Thu, 29 Jul 2004) | 5 lines
+Changed paths:
+   M /trunk/miniSAPserver/ChangeLog
+   M /trunk/miniSAPserver/broadcast.h
+   M /trunk/miniSAPserver/sap.cfg
+   M /trunk/miniSAPserver/sapserver.cpp
+
+* fix potential divide by 0
+* setsockopt for ttl uses char instead of int.
+  (this doesn't have the fallback mode VLC, but miniSAPserver
+  is unmaintained and not so portable anyways :)
+
+------------------------------------------------------------------------
+r256 | hartman | 2004-07-26 19:46:45 +0300 (Mon, 26 Jul 2004) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/broadcast.cpp
+   M /trunk/miniSAPserver/broadcast.h
+   M /trunk/miniSAPserver/parser.cpp
+   M /trunk/miniSAPserver/parser.h
+   M /trunk/miniSAPserver/sapserver.cpp
+
+* mSAPs interface selection patch by John Wehle <john at feith dot com>
+
+------------------------------------------------------------------------
+r255 | hartman | 2004-07-26 19:39:50 +0300 (Mon, 26 Jul 2004) | 12 lines
+Changed paths:
+   M /trunk/miniSAPserver/AUTHORS
+   M /trunk/miniSAPserver/ChangeLog
+   M /trunk/miniSAPserver/configure.ac
+   M /trunk/miniSAPserver/message.cpp
+   M /trunk/miniSAPserver/parser.cpp
+   M /trunk/miniSAPserver/parser.h
+   M /trunk/miniSAPserver/program.cpp
+   M /trunk/miniSAPserver/program.h
+   M /trunk/miniSAPserver/sap.cfg
+   M /trunk/miniSAPserver/sapserver.1
+   M /trunk/miniSAPserver/sapserver.cpp
+   M /trunk/miniSAPserver/sapserver.h
+   M /trunk/miniSAPserver/slp.cpp
+
+miniSAPserver 0.2.4 (postrelease committing :)
+
+* Bugfix in RTP payloadformat announce (now uses 33 [MPEG TS] instead of 14 [MP3])
+* Added a config option to set the SAP delay
+* Added a=tool SDP parameter so miniSAPserver announces can be more easily recognized
+* Added a=mux:m2t and a=packetformat:RAW SDP parameters (not required, but some players like these. VBrick player comes to mind.)
+* Changed a=plgroup to a=x-plgroup because it is a non standardized parameter (new style will be supported by VLC 0.7.3 and up)
+* Updated the manpage
+* Clarified that miniSAPserver is only supposed to work for MPEG TS streams.
+* Fixed a missing newline in the -h help
+
+
+------------------------------------------------------------------------
+r254 | nitrox | 2003-10-29 02:43:39 +0200 (Wed, 29 Oct 2003) | 4 lines
+Changed paths:
+   M /trunk/miniSAPserver/broadcast.cpp
+   M /trunk/miniSAPserver/configure.ac
+
+. fixed the ipv6 multicast ttl setting (IPV6_MULTICAST_HOPS)
+. change AC_CONFIG_HEADER for AM_CONFIG_HEADER
+           (automake failed on a debian/stable)
+
+------------------------------------------------------------------------
+r253 | nitrox | 2003-09-23 19:47:15 +0300 (Tue, 23 Sep 2003) | 15 lines
+Changed paths:
+   M /trunk/miniSAPserver/message.cpp
+   M /trunk/miniSAPserver/sapserver.cpp
+
+Changes in order to fix the following bugs:
+
+1. channels were marked as audio (should be video)
+2. The same message id were used for all channels which
+   is against the sap (rfc 2974)
+3. All channels sent at the same time and then delay is not a
+   good idea when sending many channels. Spreading out the sending
+   and increasing the delay, makes it more likely to stay under 4000 bits/s
+   (even though it still is a very rudimentary bandwidth regulation to
+   require recompilation when adding channels.....)
+
+
+
+courtesy of Gunnar Monell <gunnar.monell@i3micro.com>
+
+------------------------------------------------------------------------
+r252 | zorglub | 2003-09-14 19:40:47 +0300 (Sun, 14 Sep 2003) | 4 lines
+Changed paths:
+   M /trunk/miniSAPserver/slp.cpp
+
+Always use the same slp service
+
+Compilation fix
+
+------------------------------------------------------------------------
+r251 | zorglub | 2003-09-11 18:33:53 +0300 (Thu, 11 Sep 2003) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/message.cpp
+   M /trunk/miniSAPserver/parser.cpp
+   M /trunk/miniSAPserver/program.cpp
+   M /trunk/miniSAPserver/program.h
+   M /trunk/miniSAPserver/sap.cfg
+
+HTTP announcing support
+
+------------------------------------------------------------------------
+r250 | zorglub | 2003-08-12 18:59:19 +0300 (Tue, 12 Aug 2003) | 8 lines
+Changed paths:
+   A /trunk/miniSAPserver/ChangeLog
+   A /trunk/miniSAPserver/INSTALL
+   A /trunk/miniSAPserver/Makefile.am
+   D /trunk/miniSAPserver/Makefile.in
+   M /trunk/miniSAPserver/NEWS
+   A /trunk/miniSAPserver/README
+   A /trunk/miniSAPserver/bootstrap
+   M /trunk/miniSAPserver/configure.ac
+   A /trunk/miniSAPserver/lslp.h
+   M /trunk/miniSAPserver/sapserver.cpp
+   M /trunk/miniSAPserver/slp.cpp
+   D /trunk/miniSAPserver/slp.h
+
+* Makefile.am : really use automake/autoconf
+
+* ChangeLog, INSTALL, README: GNU-style files
+
+* bootstrap: minimalistic build file to avoid auto*
+
+* slp.h -> lslp.h to avoid conflicts with <slp.h> when -I. is given
+
+------------------------------------------------------------------------
+r249 | zorglub | 2003-08-10 15:44:18 +0300 (Sun, 10 Aug 2003) | 9 lines
+Changed paths:
+   D /trunk/miniSAPserver/Makefile
+   A /trunk/miniSAPserver/Makefile.in
+   M /trunk/miniSAPserver/NEWS
+   A /trunk/miniSAPserver/configure.ac
+   M /trunk/miniSAPserver/parser.cpp
+   M /trunk/miniSAPserver/parser.h
+   M /trunk/miniSAPserver/program.cpp
+   M /trunk/miniSAPserver/sap.cfg
+   A /trunk/miniSAPserver/sapserver.1
+   M /trunk/miniSAPserver/sapserver.cpp
+   M /trunk/miniSAPserver/sapserver.h
+   A /trunk/miniSAPserver/slp.cpp
+   A /trunk/miniSAPserver/slp.h
+
+* configure.ac , Makefile.in: light use of autoconf to manage options
+
+* Makefile.in:  added install and allclean targets
+
+* slp.cpp / slp.h : SLP protocol support based on libslp
+ (use "-t slp" to register programs, and "-t slp -u" to unregister them)
+
+* sapserver.1: manpage
+
+------------------------------------------------------------------------
+r248 | alexis | 2003-07-25 19:59:54 +0300 (Fri, 25 Jul 2003) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/Makefile
+   M /trunk/miniSAPserver/NEWS
+
+Lets go for a release !
+
+------------------------------------------------------------------------
+r246 | nitrox | 2003-07-24 20:09:22 +0300 (Thu, 24 Jul 2003) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/broadcast.cpp
+   M /trunk/miniSAPserver/message.cpp
+   M /trunk/miniSAPserver/parser.h
+   M /trunk/miniSAPserver/program.cpp
+   M /trunk/miniSAPserver/program.h
+   M /trunk/miniSAPserver/sapserver.cpp
+   M /trunk/miniSAPserver/sapserver.h
+
+Code cleaning (and tabs removing)
+
+------------------------------------------------------------------------
+r245 | nitrox | 2003-07-24 19:35:08 +0300 (Thu, 24 Jul 2003) | 5 lines
+Changed paths:
+   M /trunk/miniSAPserver/parser.cpp
+
+. Fixed the following bug:
+    When parsing lines with comments, the last blank chars were not removed
+    and were streamed in the sdp packet getting an non-rfc compliant
+    description.
+
+------------------------------------------------------------------------
+r244 | zorglub | 2003-06-20 15:07:41 +0300 (Fri, 20 Jun 2003) | 10 lines
+Changed paths:
+   M /trunk/miniSAPserver/AUTHORS
+   M /trunk/miniSAPserver/Makefile
+   A /trunk/miniSAPserver/NEWS
+   M /trunk/miniSAPserver/program.cpp
+   M /trunk/miniSAPserver/sap.cfg
+
+* NEWS: added a minimalistic changelog
+
+* Authors: added nitrox
+
+* Makefile: added a 'all' target
+
+* program.cpp: Fixed a stupid bug on the "port=" line parsing
+
+* sap.cfg: added comment on the "port=" line
+
+------------------------------------------------------------------------
+r243 | alexis | 2003-06-20 14:44:49 +0300 (Fri, 20 Jun 2003) | 7 lines
+Changed paths:
+   M /trunk/miniSAPserver/Makefile
+   M /trunk/miniSAPserver/sap.cfg
+   M /trunk/miniSAPserver/sapserver.h
+
+Makefile: small changes and bumped up version number to 0.2.1.
+sapserver.h : changed the scope.
+sap.cfg : changed default config.
+
+One more bug to fix before the release : the comment on the "port=" line
+of sap.cfg (zorglub is investigating this one).
+
+------------------------------------------------------------------------
+r242 | sam | 2003-06-18 16:48:22 +0300 (Wed, 18 Jun 2003) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/broadcast.cpp
+
+  * ./broadcast.cpp: whoops, used memcpy instead of my silly inet_pton O:-)
+
+------------------------------------------------------------------------
+r241 | sam | 2003-06-18 16:46:13 +0300 (Wed, 18 Jun 2003) | 3 lines
+Changed paths:
+   M /trunk/miniSAPserver/broadcast.cpp
+
+  * ./broadcast.cpp: use inet_pton instead of blindly setting the IPv6
+    address.
+
+------------------------------------------------------------------------
+r240 | zorglub | 2003-06-16 18:30:12 +0300 (Mon, 16 Jun 2003) | 3 lines
+Changed paths:
+   M /trunk/miniSAPserver/parser.cpp
+   M /trunk/miniSAPserver/program.cpp
+   M /trunk/miniSAPserver/program.h
+   M /trunk/miniSAPserver/sap.cfg
+
+* Bugfix in configuration file parsing
+* Sanity check
+
+------------------------------------------------------------------------
+r239 | zorglub | 2003-06-16 13:26:47 +0300 (Mon, 16 Jun 2003) | 9 lines
+Changed paths:
+   M /trunk/miniSAPserver/Makefile
+   M /trunk/miniSAPserver/broadcast.cpp
+   M /trunk/miniSAPserver/broadcast.h
+   M /trunk/miniSAPserver/message.cpp
+   M /trunk/miniSAPserver/parser.cpp
+   M /trunk/miniSAPserver/parser.h
+   M /trunk/miniSAPserver/program.cpp
+   M /trunk/miniSAPserver/program.h
+   M /trunk/miniSAPserver/sap.cfg
+   M /trunk/miniSAPserver/sapserver.cpp
+   M /trunk/miniSAPserver/sapserver.h
+
+* Now able to announce IPv6 sessions. For each program, you just have to
+say if they are IPv6.
+   (VLC needs VERY small changes to be able to read them)
+
+* Improved IPv6 announces (multi-scope)
+
+* Ability to give the specify the TTL of the program, instead of just
+saying 15
+
+------------------------------------------------------------------------
+r238 | zorglub | 2003-06-15 00:45:12 +0300 (Sun, 15 Jun 2003) | 16 lines
+Changed paths:
+   M /trunk/miniSAPserver/AUTHORS
+   M /trunk/miniSAPserver/Makefile
+   M /trunk/miniSAPserver/broadcast.cpp
+   M /trunk/miniSAPserver/broadcast.h
+   M /trunk/miniSAPserver/message.cpp
+   M /trunk/miniSAPserver/parser.cpp
+   M /trunk/miniSAPserver/parser.h
+   M /trunk/miniSAPserver/sap.cfg
+   M /trunk/miniSAPserver/sapserver.cpp
+
+* broadcast.h , broadcast.cpp , parser.cpp , parser.h ,
+  sapserver.cpp,sap.cfg
+
+IPv6 SAP support. Not very useful at the moment since VLC doesn't
+support it, however.
+It will only work for link-local streaming at the moment,since the SAP
+address depends on the prefix, but it will be the more likely case.
+You now have the ipversion= configuration option (6 for IPv6,anything
+else for ipv4).
+
+* Makefile: Use intelligent compilation and compilation options
+
+* all: check system calls and take the appropriate action
+
+* parser.cpp , parser.h , sapserver.cpp: -s option to display dots.
+
+------------------------------------------------------------------------
+r237 | alexis | 2003-05-26 01:28:57 +0300 (Mon, 26 May 2003) | 3 lines
+Changed paths:
+   M /trunk/miniSAPserver/Makefile
+   M /trunk/miniSAPserver/sapserver.h
+
+ * add make dist
+ * add the version number in the Makefile
+
+------------------------------------------------------------------------
+r236 | alexis | 2003-05-26 01:08:48 +0300 (Mon, 26 May 2003) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/sapserver.cpp
+   M /trunk/miniSAPserver/sapserver.h
+
+ * bugfixes for OS X (DELAY and size_t cast)
+
+------------------------------------------------------------------------
+r235 | hartman | 2003-05-26 00:57:45 +0300 (Mon, 26 May 2003) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/sapserver.cpp
+
+* fixed a warning of a fprintf of size_t. now use %zd instead of %u.
+
+------------------------------------------------------------------------
+r234 | alexis | 2003-05-26 00:41:19 +0300 (Mon, 26 May 2003) | 3 lines
+Changed paths:
+   M /trunk/miniSAPserver/message.cpp
+   M /trunk/miniSAPserver/parser.cpp
+   M /trunk/miniSAPserver/program.cpp
+   M /trunk/miniSAPserver/program.h
+   M /trunk/miniSAPserver/sap.cfg
+
+New 'port' parameter, coutesy of Philippe Van Hecke
+<philippe.vanhecke@belnet.be>.
+
+------------------------------------------------------------------------
+r233 | alexis | 2003-05-25 21:25:40 +0300 (Sun, 25 May 2003) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/sapserver.cpp
+
+Compilation fix with gcc-3.2
+
+------------------------------------------------------------------------
+r232 | nitrox | 2003-05-25 19:36:00 +0300 (Sun, 25 May 2003) | 3 lines
+Changed paths:
+   M /trunk/miniSAPserver/message.cpp
+   M /trunk/miniSAPserver/message.h
+   M /trunk/miniSAPserver/program.cpp
+   M /trunk/miniSAPserver/program.h
+   M /trunk/miniSAPserver/sapserver.cpp
+
+. more compliance with SDP RFC
+. Set the time 't=' option to 'permanent' instead of an invalid date
+
+------------------------------------------------------------------------
+r231 | nitrox | 2003-05-22 05:22:45 +0300 (Thu, 22 May 2003) | 7 lines
+Changed paths:
+   M /trunk/miniSAPserver/Makefile
+   A /trunk/miniSAPserver/broadcast.cpp
+   A /trunk/miniSAPserver/broadcast.h
+   A /trunk/miniSAPserver/message.cpp
+   A /trunk/miniSAPserver/message.h
+   A /trunk/miniSAPserver/parser.cpp
+   A /trunk/miniSAPserver/parser.h
+   A /trunk/miniSAPserver/program.cpp
+   A /trunk/miniSAPserver/program.h
+   M /trunk/miniSAPserver/sapserver.cpp
+   A /trunk/miniSAPserver/sapserver.h
+
+Some modifications in structures in order to be compliant with:
+    . SAP (RFC 2974)
+    . SDP (RFC 2327)
+
+Now, packets are compliant. But there is still a lot of work to fully
+implement the RFCs
+
+------------------------------------------------------------------------
+r230 | zorglub | 2003-05-18 14:58:59 +0300 (Sun, 18 May 2003) | 12 lines
+Changed paths:
+   M /trunk/miniSAPserver/AUTHORS
+   M /trunk/miniSAPserver/Makefile
+   M /trunk/miniSAPserver/sap.cfg
+   M /trunk/miniSAPserver/sapserver.cpp
+
+* AUTHORS: updated the list
+
+* sapserver.cpp:
+  * Use C-style comments
+  * Added many comments
+  * Fixed a stupid bug that prevented to use the -d option after the -c
+  * Added a minimalistic help function.
+
+* Makefile: use of "rm -f" for clean is better
+
+* sap.cfg: restored the right file.
+
+------------------------------------------------------------------------
+r229 | videolan | 2003-05-17 13:36:01 +0300 (Sat, 17 May 2003) | 4 lines
+Changed paths:
+   M /trunk/miniSAPserver/sap.cfg
+   M /trunk/miniSAPserver/sapserver.cpp
+
+Added the "-f" command line option to give the configuration file as other VideoLAN projects also use it. (you can  still use -d)
+
+Increased the size of the SAP fields
+
+------------------------------------------------------------------------
+r228 | zorglub | 2003-05-07 02:36:03 +0300 (Wed, 07 May 2003) | 5 lines
+Changed paths:
+   M /trunk/miniSAPserver/sap.cfg
+   M /trunk/miniSAPserver/sapserver.cpp
+
+* > It apparenly doesn't like comments on the same line as parameters
+  Now, it does, provided they begin with a '#'
+
+* Little code cleanup
+
+------------------------------------------------------------------------
+r227 | alexis | 2003-05-06 23:48:23 +0300 (Tue, 06 May 2003) | 4 lines
+Changed paths:
+   A /trunk/miniSAPserver/AUTHORS
+   A /trunk/miniSAPserver/COPYING
+   M /trunk/miniSAPserver/Makefile
+
+Mac OS X port ! :)
+
+Added the standard files with the licences and the authors.
+
+------------------------------------------------------------------------
+r226 | alexis | 2003-04-26 01:42:15 +0300 (Sat, 26 Apr 2003) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/sap.cfg
+
+It apparenly doesn't like comments on the same line as parameters.
+
+------------------------------------------------------------------------
+r225 | alexis | 2003-04-26 00:54:07 +0300 (Sat, 26 Apr 2003) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/sap.cfg
+
+Added comments. Gitan, can you check ?
+
+------------------------------------------------------------------------
+r224 | alexis | 2003-04-26 00:45:15 +0300 (Sat, 26 Apr 2003) | 2 lines
+Changed paths:
+   M /trunk/miniSAPserver/sap.cfg
+   M /trunk/miniSAPserver/sapserver.cpp
+
+ALL : translated into english the parameters and comments.
+
+------------------------------------------------------------------------
+r223 | gitan | 2003-04-25 23:47:06 +0300 (Fri, 25 Apr 2003) | 2 lines
+Changed paths:
+   A /trunk/miniSAPserver
+   A /trunk/miniSAPserver/Makefile
+   A /trunk/miniSAPserver/sap.cfg
+   A /trunk/miniSAPserver/sapserver.cpp
+
+The Brand new videolan mini sap server !
+
+------------------------------------------------------------------------

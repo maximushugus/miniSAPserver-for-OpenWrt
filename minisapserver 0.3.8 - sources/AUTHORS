@@ -1,0 +1,37 @@
+# The format of this file was inspired by the Linux kernel CREDITS file.
+#
+# Authors and contributors are listed alphabetically.
+#
+# The fields are: name (N), email (E), web-address (W), CVS account login (C),
+# PGP key ID and fingerprint (P), description (D), and snail-mail address (S).
+
+N: Damien Lucas
+E: nitrox@videolan.org
+C: nitrox
+D: Core
+S: France
+
+N: Arnaud Schauly
+E: gitan@via.ecp.fr
+C: gitan
+D: Core
+S: France
+
+N: Clément Stenac
+E: zorglub@via.ecp.fr
+C: zorglub
+D: Core
+S: France
+
+N: Derk-Jan Hartman
+E: hartman at videolan dot org
+C: hartman
+D: Delay option
+D: Standards compliance fixes
+S: Netherlands
+
+N: Rémi Denis-Courmont
+E: rem at videolan dot org
+C: courmisch
+D: Unicode support, various fixes
+S: Finland

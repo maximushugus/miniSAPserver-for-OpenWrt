@@ -1,0 +1,101 @@
+-- Changes from version 0.3.7 to version 0.3.8
+
+* Support for the a=cat category SDP attribute.
+
+-- Changes from version 0.3.6 to version 0.3.7
+
+* Support for Solaris.
+* Fix IPv6 support.
+
+-- Changes from version 0.3.5 to version 0.3.6
+
+* Add proper a=rtcp parameter when the RTP port is odd
+  (this fixes compatibility with VLC 0.9.9 and up).
+
+-- Changes from version 0.3.4 to version 0.3.5
+
+* Fix announce timer (again)
+* Fix raw UDP media type
+
+-- Changes from version 0.3.3 to version 0.3.4
+
+* Fix announce timer
+* Set sockaddr.sa_len on BSDs
+
+-- Changes from version 0.3.2 to version 0.3.3
+
+* Avoid some useless memory allocations
+* Interface selection support for IPv6 announces
+* Set default program TTL to 255 similarly
+* Include charset session-level attribute
+* Lots of conformance fixes:
+  - tool is a session-level attribute 
+  - default SAP TTL is 255
+  - IPv6 announces must not include a TTL
+  - mux and packetformat attributes do not exists
+  - use CRLF rather than just LF
+* Move playlist group and connection infos to session-level
+
+-- Changes from version 0.3.1 to version 0.3.2
+
+* Fix broken multicast TTL setting on IPv4 packets
+
+-- Changes from version 0.3.0 to version 0.3.1
+
+* Automatic selection of IP version protocol
+* Fix sending of IPv6 addresses in announces
+* Fix SLP configure option
+* Fix compilation of SLP support
+
+-- Changes from version 0.2.4 to version 0.3.0
+
+* Interface selection (patch by John Wehle <john at feith dot com>)
+* On-the-fly characters encoding conversion from user's locale to UTF-8
+* Automatic selection of IPv4/IPv6 address to send SAP announce to
+* Removed HTTP non-standard announces support
+* Removed ipversion and ipv6_scope option (now it's automatic)
+* Added proper RTP announces support (with type=rtp)
+* Lots of cleanups
+
+-- Changes from version 0.2.3 to version 0.2.4
+
+* Bugfix in RTP payloadformat announce
+* Added a=tool parameter so miniSAPserver can be more easily recognized
+* Added a config option to set the SAP delay
+* Added a=mux:m2t and a=packetformat:RAW parameters
+* Changed a=plgroup to a=x-plgroup because it is a non standardized parameters
+* Updated the manpage
+* Clarified that miniSAPserver is only supposed to work for MPEG TS streams.
+
+-- Changes from version 0.2.2 to version 0.2.3
+
+* Support for VLC's playlist groups 
+* Support for announcing of HTTP streams
+* Bugfix in IPv6 multicast support
+* Bugfix in the autoconf/automake system
+* Created a manpage
+* Support for the SLP announcing protocol
+* Improved build system
+
+-- Changes from version 0.2.1 to version 0.2.2
+
+* Bugfixes
+
+-- Changes from version 0.2.0 to version 0.2.1
+
+* IPv6 support -both for announces and announced streams-
+
+-- Changes from version 0.1.2 to version 0.2.0
+
+* Major structural improvements
+* The miniSAPserver now sends packets that comply with the RFC
+
+-- Changes from version 0.1.1 to version 0.1.2
+
+* Bugfixes
+
+-- Changes from version 0.1.0 to version 0.1.1
+
+* Bugfixes
+
+-- Version 0.1.0: initial release
